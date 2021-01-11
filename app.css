@@ -1,0 +1,68 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+h1{
+    color: white;
+    text-decoration: underline grey 3px;
+    line-height: 1;
+}
+#calc{
+    width: 320px;
+    height: 540px;
+    background-color: #eaedef;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 8px grey;
+    transition: 1s;
+    top: 3rem;
+    overflow: hidden;
+}
+#calc:hover{
+    box-shadow: 0 0 50px 8px green;
+
+}
+#result{
+    height: 120px;
+}
+#history{
+    text-align: right;
+    height: 20px;
+    margin: 10px 20px;
+    font-size: 15px;
+    color: #919191;
+    padding: 1rem 0;
+}
+#output{
+    text-align: right;
+    height: 40px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+
+#keyboard{
+    height: 400px;
+}
+.operator,.number,.empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+    outline: none;
+    transition: 0.5s;
+}
+.number,.empty{
+}
+.number,.operator{
+    cursor: pointer;
+}
+
+.operator:hover ,.number:hover{
+    background-color: grey;
+    font-size: 17px;
+}
